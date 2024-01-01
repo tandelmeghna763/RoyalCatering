@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="RoyalCatering.css">
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["n1"].value;
+            var y = document.forms["myForm"]["n2"].value;
+            var z = document.forms["myForm"]["n3"].value;
+            var w = document.forms["myForm"]["n4"].value;
+            if (x == "") {
+                alert("Please fill out this form");
+                return false;
+            }
+            else if (y == "") {
+                alert("Please fill out this form");
+                return false;
+            }
+            else if (z == "") {
+                alert("Please fill out this form");
+                return false;
+            }
+            else if (w == "") {
+                alert("Please fill out this form");
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="flex">
+        <div id="name">Royal Burger</div>
+        <a href="#about" class="navbar" align="center">About</a>
+        <a href="#menu" class="navbar" align="center">Menu</a>
+        <a href="#contact" class="navbar" align="center">Contact</a>
+    </nav>
+    <div>
+        <img class="image" src="hamburger.jpg" width="100%">
+        <div class="font">Royal Catering</div>
+    </div>
+    <div id="about">
+        <img class="image2" src="tablesetting2.jpg">
+        <div class="right">About Catering</div>
+        <div class="right2">Traditiin since 1889</div>
+        <p class="p">
+            The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit
+            consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in
+            reprehenderit in
+            voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="pm">seasonal</span>
+            ingredients.
+        </p>
+        <p class="p2">
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum
+            consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </div>
+    <hr class="line">
+    <div id="menu">
+        <img src="tablesetting.jpg" class="image3">
+        <div class="left">Our Menu</div>
+        <div class="m1">Bread Basket</div>
+        <div class="n1">Assortment of fresh baked fruit breads and muffins 5.50</div>
+        <div class="m2"> Honey Almond Granola with Fruits</div>
+        <div class="n2">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</div>
+        <div class="m3">Belgian Waffle</div>
+        <div class="n3">Vanilla flavored batter with malted flour 7.50</div>
+        <div class="m4">Scrambled eggs</div>
+        <div class="n4">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</div>
+        <div class="m5">Blueberry Pancakes</div>
+        <div class="n5">With syrup, butter and lots of berries 8.50</div>
+    </div>
+    <hr class="line">
+    <div id="contact">
+        <div class="c1">Contact</div>
+        <p class="p3">We offer full-service catering for any event, large or small. We understand your needs and we will
+            cater the food to
+            satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+        <div class="p4">Catering Service, 42nd Living St, 43043 New York, NY</div>
+        <div class="p5">You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send
+            us a message here:</div>
+        <form name="myForm" action="www.google.com" onsubmit="return validateForm()">
+            <input type="text" class="text1" placeholder="Name" name="n1">
+            <input type="Number" class="text2" placeholder="How many people" name="n2">
+            <input type="datetime-local" class="text3" placeholder="none" name="n3">
+            <input type="text" class="text4" placeholder="Message/Special requirements" name="n4">
+            <button class="button">SEND MESSAGE</button>
+        </form>
+    </div>
+    <!-- <div class="last">
+        <div class="my1">Powered by <u>Meghna Tandel</u></div>
+    </div> -->
+</body>
+
+</html>
